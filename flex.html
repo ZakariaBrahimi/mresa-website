@@ -9,37 +9,113 @@
 		margin: 0;
 		box-sizing: border-box;
 	}
+	#container{
+		margin-left: 20%;
+		margin-right: 20%;
+	}
 	header{
-		/*color: white;*/
-		/*background-image: url("imgs/01.jpg");*/
+		color: white;
+		background-image: url('imgs/01.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+	.header0{
+		opacity: 0.5;
+		z-index: -1;
+	}
+	header .icons{
+		display: flex;
+		justify-content: flex-end;
+	}
+	header .icons i{
+		padding: 10px;
+		
+	}
+	header .navbar{
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		/*background-color: red;*/
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+	header .navbar ul{
+		list-style: none;
+	}
+	header .navbar ul li{
+		display: inline-block;
+	}
+	header .navbar ul li a{
+		text-decoration: none;
+		padding: 8px;
+		color: white;
+	}
+	header .navbar #logo{
+		font-weight: bolder;
+		font-size: 1.6rem;
+	}
+	.main{
+		text-align: center;
+		/*background-color: red;*/
+		margin-top: 15%;
+		margin-bottom: 15%;
+		text-transform: uppercase;
+	}
+	header .main p{
+		padding: 20px;
+	}
+	header .main h1{
+		padding: 20px;
+		margin-bottom: 60px;
+	}
+	header .main div{
+		margin-bottom: 30px;
+	}
+	header .main .a1{
+		text-decoration: none;
+		color: white;
+		/*padding: 10px;*/
+		background-color: #CF9C67;
+		margin-right: 25px;
+	}
+	header .main .a2{
+		text-decoration: none;
+		color: white;
+		padding: 10px;
+		border : solid 1px black;
+		
 	}
 </style>
 </head>
 <body>
+<div id="container">
 <header>
+	<div class="header0">
 	<div class="icons">
-		<i class="fa fa-shield"></i>
-		<i class="fa fa-shield"></i>
-		<i class="fa fa-shield"></i>
-		<i class="fa fa-shield"></i>
-		<i class="fa fa-shield"></i>
+		<i class="fa fa-home" aria-hidden="true"></i>
+		<i class="fa fa-phone" aria-hidden="true"></i>
+		<i class="fa fa-envelope" aria-hidden="true"></i>
+		<i class="fa fa-sign-in" aria-hidden="true"></i>
+		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 	</div>
-	<nav>
+	<div class="navbar">
+		<div id="logo">miresa</div>
 		<ul>
-			<li>home</li>
-			<li>pages</li>
-			<li>dropdown</li>
-			<li>link text</li>
-			<li>link text</li>
+			<li><a href="">home</a></li>
+			<li><a href="">pages</a></li>
+			<li><a href="">dropdown</a></li>
+			<li><a href="">link text</a></li>
+			<li><a href="">link text</a></li>
 		</ul>
-	</nav>
-	<div>
+	</div>
+	<div class="main">
 		<p>AENEAN SAGITTIS TINCIDUNT</p>
 		<h1>POSUERE MORBI SCELERISQUE</h1>
-		<div class="btn">
-			<a href="">orner sen ultrics</a>
-			<a href="">orner posrta</a>
+		<div>
+		<a class="a1" href="">orner sen ultrics</a>
+		<a class="a2" href="">orner posrta</a>
 		</div>
+	</div>
 	</div>
 </header>
 
@@ -253,5 +329,6 @@
 		<p>Template by OS Templates</p>
 	</div>
 </footer>
+</div>
 </body>
 </html>
